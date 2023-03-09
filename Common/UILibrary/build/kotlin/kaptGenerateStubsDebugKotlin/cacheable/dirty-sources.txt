@@ -1,2 +1,0 @@
-/Users/gori/.projects/ChapterDev/Common/UILibrary/src/main/java/io/gghf/uilibrary/topbar/MainTopBar.kt
-/Users/gori/.projects/ChapterDev/Common/UILibrary/src/main/java/io/gghf/uilibrary/scaffold/MainScaffold.kt

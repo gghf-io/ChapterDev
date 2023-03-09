@@ -3,6 +3,6 @@
 3    package="io.gghf.core" >
 4
 5    <uses-sdk android:minSdkVersion="24" />
-5-->/Users/gori/.projects/ChapterDev/Common/Core/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest374688918669478893.xml
+5-->/Users/gori/.projects/ChapterDev/Common/Core/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest14035757146312268253.xml
 6
 7</manifest>

@@ -14,13 +14,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import io.gghf.chapterdev.di.appModule
-import io.gghf.uilibrary.scaffold.MainScaffold
-import io.gghf.uilibrary.topbar.MainTopBar
-import io.gghf.chapterdev.screen.add.AddScreen
-import io.gghf.chapterdev.screen.list.ListScreen
 import io.gghf.chapterdev.ui.theme.ChapterDevTheme
 import io.gghf.core.Tag
+import io.gghf.featuretodo.TodoAddScreen
+import io.gghf.featuretodo.TodoListScreen
+import io.gghf.featuretodo.di.todoModule
+import io.gghf.uilibrary.scaffold.MainScaffold
+import io.gghf.uilibrary.topbar.MainTopBar
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
         startKoin {
             androidLogger()
             androidContext(this@MainActivity)
-            modules(appModule)
+            modules(todoModule)
         }
 
         setContent {
@@ -43,12 +43,14 @@ class MainActivity : ComponentActivity() {
                 ) {
                     MainScaffold(
                         topBar = {
-                            MainTopBar(title = "TodoList", onBackPressed = { Log.d("MainTopBar", "Back Pressed") })
+                            MainTopBar(
+                                title = "TodoList",
+                                onBackPressed = { Log.d("MainTopBar", "Back Pressed") })
                         }
                     ) { padding ->
                         NavHost(navController = navController, startDestination = Tag.Screen.List) {
-                            composable(Tag.Screen.List) { ListScreen(padding) }
-                            composable(Tag.Screen.Add) { AddScreen(this@MainActivity) }
+                            composable(Tag.Screen.List) { TodoListScreen(padding) }
+                            composable(Tag.Screen.Add) { TodoAddScreen() }
                         }
                     }
                 }

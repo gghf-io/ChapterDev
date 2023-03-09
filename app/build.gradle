@@ -69,5 +69,6 @@ dependencies {
 
     implementation project(":Common:Core")
     implementation project(":Common:UILibrary")
-    implementation project(":Repositories:Todo")
+    implementation project(':Features:FeatureTodo')
+
 }

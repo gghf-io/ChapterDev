@@ -3,6 +3,6 @@
 3    package="io.gghf.uilibrary" >
 4
 5    <uses-sdk android:minSdkVersion="24" />
-5-->/Users/gori/.projects/ChapterDev/Common/UILibrary/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest8516790329984959967.xml
+5-->/Users/gori/.projects/ChapterDev/Common/UILibrary/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest10852207461333884043.xml
 6
 7</manifest>

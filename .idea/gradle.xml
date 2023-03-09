@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/Common" />
             <option value="$PROJECT_DIR$/Common/Core" />
             <option value="$PROJECT_DIR$/Common/UILibrary" />
+            <option value="$PROJECT_DIR$/Features" />
+            <option value="$PROJECT_DIR$/Features/FeatureTodo" />
             <option value="$PROJECT_DIR$/Repositories" />
             <option value="$PROJECT_DIR$/Repositories/Todo" />
             <option value="$PROJECT_DIR$/app" />
